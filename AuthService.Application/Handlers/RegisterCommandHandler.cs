@@ -1,4 +1,5 @@
-﻿using AuthService.Domain.Entities;
+﻿using AuthService.Application.Commands.Register;
+using AuthService.Domain.Entities;
 using AuthService.Domain.Interfaces;
 using BCrypt.Net;
 using MediatR;
@@ -8,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AuthService.Application.Commands.Register
+namespace AuthService.Application.Handlers
 {
     public class RegisterCommandHandler : IRequestHandler<RegisterCommand, Guid>
     {
